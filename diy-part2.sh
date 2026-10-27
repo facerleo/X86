@@ -14,3 +14,6 @@
 sed -i 's/192.168.1.1/192.168.5.30/g' package/base-files/luci2/bin/config_generate
 
 sed -i '/CYXluq4wUazHjmCDBCqXF/d' package/lean/default-settings/files/zzz-default-settings    
+
+# 删除导致冲突的 953 shortcut-fe 补丁
+rm -f target/linux/generic/hack-6.18/953-net-patch-linux-kernel-to-support-shortcut-fe.patch
