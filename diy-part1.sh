@@ -10,6 +10,8 @@
 # See /LICENSE for more information.
 #
 
-echo 'src-git kenzo https://github.com/kenzok8/openwrt-packages' >>feeds.conf.default                             
-echo 'src-git small https://github.com/kenzok8/small' >>feeds.conf.default  
+# echo 'src-git kenzo https://github.com/kenzok8/openwrt-packages' >>feeds.conf.default                             
+# echo 'src-git small https://github.com/kenzok8/small' >>feeds.conf.default  
 # git clone https://github.com/QiuSimons/luci-app-daed.git package/lean/luci-app-daed
+echo 'src-git nas https://github.com/linkease/nas-packages.git;master' >> feeds.conf.default
+echo 'src-git nas_luci https://github.com/linkease/nas-packages-luci.git;main' >> feeds.conf.default
